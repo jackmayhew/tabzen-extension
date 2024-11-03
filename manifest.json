@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Clean Sheet Tabs",  
+    "version": "1.0",
+    "description": "Provides a cleaner viewing experience for guitar tabs and sheet music by removing promotional overlays.",
+    "permissions": ["scripting"],
+    "host_permissions": [
+      "https://www.songsterr.com/*",
+      "https://tabs.ultimate-guitar.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.songsterr.com/*",
+          "https://tabs.ultimate-guitar.com/*"
+        ],
+        "css": ["styles.css"],
+        "js": ["content.js"]
+      }
+    ]
+  }

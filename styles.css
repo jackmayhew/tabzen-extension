@@ -1,0 +1,11 @@
+/* Songsterr */
+#showroom, 
+#showroom_panel {
+    display: none !important;
+}
+
+/* Ultimate Guitar */
+.aV0z9,
+.BIfOl {
+    display: none !important;
+}
