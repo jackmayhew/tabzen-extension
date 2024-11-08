@@ -29,15 +29,37 @@ function hideElements() {
   });
 }
 
-hideElements();
+function showElements() {
+  const currentSite = getCurrentSite();
+  if (!currentSite || !siteConfigs[currentSite]) return;
 
-const observer = new MutationObserver(() => {
-  hideElements();
+  const selectorsToShow = siteConfigs[currentSite].selectors;
+  selectorsToShow.forEach((selector) => {
+    const elements = document.querySelectorAll(selector);
+    elements.forEach((element) => {
+      if (element) {
+        element.style.display = "";
+      }
+    });
+  });
+}
+
+// Check initial state from localStorage
+chrome.storage.local.get("enabled", (result) => {
+  if (result.enabled) {
+    hideElements();
+  } else {
+    showElements();
+  }
 });
 
-observer.observe(document.documentElement, {
-  childList: true,
-  subtree: true,
+// Listen for changes to the "enabled" state
+chrome.storage.onChanged.addListener((changes) => {
+  if (changes.enabled) {
+    if (changes.enabled.newValue) {
+      hideElements();
+    } else {
+      showElements();
+    }
+  }
 });
-
-window.addEventListener("resize", hideElements);
