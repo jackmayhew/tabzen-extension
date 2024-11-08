@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      .dropdown {
-        position: relative;
-        width: 250px;
-        padding: 10px 0;
-
-      }
-      header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* padding: 10px 0 0 0; */
-      }
-      img {
-        width: 150px;
-        margin-right: 3px;
-      }
-      #toggleBtn {
-        margin: 20px;
-        display: block;
-        width: 80%;
-        margin: 20px auto;
-      }
-      
-    </style>
+    <link rel="stylesheet" href="css/popup.css" />
   </head>
   <body>
     <div class="dropdown">
       <header>
         <a href="https://tabzen.app/" target="_blank" rel="noopener">
-          <img src="tabzen2.svg" alt="TabZen Logo" />
+          <img src="img/tabzen.svg" alt="TabZen Logo" />
         </a>
       </header>
-      <button id="toggleBtn">Toggle</button>
+      <div class="switch-container">
+        <span class="switch-label">Off</span>
+        <label class="switch">
+          <input type="checkbox" id="toggleSwitch" />
+          <span class="slider"></span>
+        </label>
+        <span class="switch-label">On</span>
+      </div>
     </div>
-    <script src="popup.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

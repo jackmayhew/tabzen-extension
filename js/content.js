@@ -3,9 +3,11 @@ const siteConfigs = {
     selectors: ["#showroom", "#showroom_panel"],
   },
   "ultimate-guitar.com": {
-    selectors: [".NCQKG", ".BIfOl"],
+    selectors: [".tYMPb", ".BIfOl", ".aV0z9"],
   },
 };
+
+let isEnabled = true; // global variable to track toggle state
 
 function getCurrentSite() {
   const hostname = window.location.hostname;
@@ -44,22 +46,38 @@ function showElements() {
   });
 }
 
-// Check initial state from localStorage
+// check initial state from localStorage
 chrome.storage.local.get("enabled", (result) => {
-  if (result.enabled) {
+  isEnabled = result.enabled === undefined ? true : result.enabled;
+  if (isEnabled) {
     hideElements();
   } else {
     showElements();
   }
 });
 
-// Listen for changes to the "enabled" state
+// listen for changes to the "enabled" state
 chrome.storage.onChanged.addListener((changes) => {
   if (changes.enabled) {
-    if (changes.enabled.newValue) {
+    isEnabled = changes.enabled.newValue === undefined || changes.enabled.newValue;
+    if (isEnabled) {
       hideElements();
     } else {
       showElements();
     }
   }
 });
+
+// mutationObserver to watch for changes in the DOM
+const observer = new MutationObserver((mutations) => {
+  if (isEnabled) { // only hide elements if the toggle is enabled
+    mutations.forEach((mutation) => {
+      if (mutation.type === "childList") {
+        hideElements();
+      }
+    });
+  }
+});
+
+// observe the entire document
+observer.observe(document, { childList: true, subtree: true });

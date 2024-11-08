@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
   "name": "TabZen",
-  "version": "1.1",
-  "description": "Enhances the viewing experience for guitar, bass, and drum tabs & chords by removing intrusive promotional overlays.",
+  "version": "1.2",
+  "description": "Enhances your viewing experience for guitar, bass, and drum tabs & chords by removing intrusive promotional overlays.",
   "permissions": [
     "storage",
-    "tabs",
+    "activeTab",
      "scripting"
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "js/background.js"
   },
   "action": {
     "default_popup": "popup.html"
@@ -24,8 +24,7 @@
         "https://www.songsterr.com/*",
         "https://tabs.ultimate-guitar.com/*"
       ],
-      "css": ["styles.css"],
-      "js": ["content.js"]
+      "js": ["js/content.js"]
     }
   ]
 }
