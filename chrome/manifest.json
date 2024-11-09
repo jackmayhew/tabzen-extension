@@ -3,28 +3,37 @@
   "name": "TabZen",
   "version": "1.2",
   "description": "Enhances your viewing experience for guitar, bass, and drum tabs & chords by removing intrusive promotional overlays.",
-  "permissions": [
-    "storage",
-    "activeTab",
-     "scripting"
-  ],
+  "permissions": ["storage", "activeTab", "scripting"],
   "background": {
-    "service_worker": "js/background.js"
+    "service_worker": "js/background.js",
+    "type": "module"
+
   },
   "action": {
     "default_popup": "popup.html"
   },
   "host_permissions": [
     "https://www.songsterr.com/*",
-    "https://tabs.ultimate-guitar.com/*"
+    "https://tabs.ultimate-guitar.com/*",
+    "https://www.ultimate-guitar.com/*",
+    "https://www.bigbasstabs.com/*",
+    "https://www.911tabs.com/*",
+    "https://chordify.net/*",
+    "https://www.guitartabs.cc/*"
   ],
   "content_scripts": [
     {
       "matches": [
         "https://www.songsterr.com/*",
-        "https://tabs.ultimate-guitar.com/*"
+        "https://tabs.ultimate-guitar.com/*",
+        "https://www.ultimate-guitar.com/*",
+        "https://www.bigbasstabs.com/*",
+        "https://www.911tabs.com/*",
+        "https://chordify.net/*",
+        "https://www.guitartabs.cc/*"
       ],
-      "js": ["js/content.js"]
+      "js": ["js/content.js"],
+       "type": "module"
     }
   ]
 }
