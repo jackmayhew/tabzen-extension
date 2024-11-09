@@ -32,8 +32,10 @@
         "https://chordify.net/*",
         "https://www.guitartabs.cc/*"
       ],
-      "js": ["js/content.js"],
-       "type": "module"
+      "js": [
+        "config/config.js",
+        "js/content.js"
+      ]
     }
   ]
 }
