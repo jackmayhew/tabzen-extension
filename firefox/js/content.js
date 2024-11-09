@@ -3,7 +3,7 @@ const siteConfigs = {
     selectors: ["#showroom", "#showroom_panel"],
   },
   "ultimate-guitar.com": {
-    selectors: [".tYMPb", ".BIfOl", ".aV0z9"],
+    selectors: [".tYMPb", ".BIfOl", ".aV0z9", ".XJpee", ".CiMr5"],
   },
 };
 
