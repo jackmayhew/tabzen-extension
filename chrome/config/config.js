@@ -47,8 +47,9 @@ const siteConfigs = {
 
   // iframe === all ads
   // b-ad-fake-player === "learn to play" on tab pages
+  // r_a === "get the note-for-note artist-approved version" popup
   "guitartabs.cc": {
-    selectors: ["iframe", ".b-ad-fake-player"],
+    selectors: ["iframe", ".b-ad-fake-player", "#r_a"],
   },
 };
 

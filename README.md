@@ -3,8 +3,12 @@
 TabZen is a browser extension that enhances your viewing experience for guitar, bass, and drum tabs & chords by removing intrusive promotional overlays from tab websites.
 
 ## Supported Websites
-- Ultimate Guitar (tabs.ultimate-guitar.com)
-- Songsterr (songsterr.com)
+- [Ultimate Guitar](https://www.ultimate-guitar.com/)
+- [Songsterr](https://www.songsterr.com/)
+- [Big Bass Tabs](https://www.bigbasstabs.com/)
+- [911Tabs](https://www.911tabs.com/guitar_tabs/)
+- [Chordify](https://chordify.net/)
+- [GuitarTabs.cc](https://www.guitartabs.cc/)
 
 ## Features
 - Automatically removes promotional overlays
@@ -36,9 +40,10 @@ Each version maintains the same core functionality but uses browser-specific API
 ## Contributing
 We welcome contributions! If you’d like to add support for other tab websites or improve the extension, here’s how you can get started:
 1. Clone the Repository: Fork and clone the repository to your local machine.
-2. Update Selectors: To support additional websites, add the necessary CSS selectors to the siteConfigs object in content.js.
-3. Testing: Ensure that the selectors work consistently and don’t interfere with the tab content.
-4. Submit a Pull Request: Once your changes are complete and tested, submit a pull request. Please include details on any new sites you’ve added and the functionality tested.
+2. Update Selectors: To support additional websites, add the necessary CSS selectors to the siteConfigs object in `config/config.js`.
+3. Update `mainifest.json`: In `manifest.json`, add the new site's URL to both the `host_permissions` and `content_scripts` sections. This ensures the extension has permission to modify content on the new site and applies the necessary scripts.
+4. Testing: Ensure that the selectors work consistently and don’t interfere with the tab content.
+5. Submit a Pull Request: Once your changes are complete and tested, submit a pull request. Please include details on any new sites you’ve added and the functionality tested.
 
 For any questions or ideas, feel free to reach out on GitHub.
 
