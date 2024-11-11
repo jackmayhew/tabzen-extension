@@ -10,6 +10,7 @@ const siteConfigs = {
   // BIfOl === "view offical tab" popup
   // XJpee === popup video
   // CiMr5 === left sidebar
+  // OcirG === "sign up" popup
 
   // ultimate-guitar.com:
   // js-ab-regular === header
@@ -23,6 +24,7 @@ const siteConfigs = {
       ".CiMr5",
       ".js-ab-regular",
       ".kCj2L",
+      ".OcirG",
     ],
   },
 

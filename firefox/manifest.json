@@ -9,11 +9,7 @@
       "strict_min_version": "109.0"
     }
   },
-  "permissions": [
-    "storage",
-    "activeTab",
-    "scripting"
-  ],
+  "permissions": ["storage", "activeTab"],
   "background": {
     "scripts": ["js/background.js"]
   },
@@ -40,10 +36,7 @@
         "https://chordify.net/*",
         "https://www.guitartabs.cc/*"
       ],
-      "js": [
-        "config/config.js",
-        "js/content.js"
-      ]
+      "js": ["config/config.js", "js/content.js"]
     }
   ]
 }
