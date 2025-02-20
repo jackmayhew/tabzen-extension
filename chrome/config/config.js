@@ -1,20 +1,22 @@
 const siteConfigs = {
-  // showroom === bottom of viewport
-  // showroom_panel === search modal
+  // showroom: bottom of viewport
+  // showroom_panel: search modal
   "songsterr.com": {
     selectors: ["#showroom", "#showroom_panel"],
   },
 
   // tabs.ultimate-guitar.com:
-  // tYMPb, aV0z9 === popup video if adblocker is detected
-  // BIfOl === "view offical tab" popup
-  // XJpee === popup video
-  // CiMr5 === left sidebar
-  // OcirG === "sign up" popup
+  // tYMPb, aV0z9: popup video if adblocker is detected
+  // BIfOl: "view offical tab" popup
+  // XJpee: popup video
+  // CiMr5: left sidebar
+  // OcirG: "sign up" popup
+  // H_wrZ, S3T7j, iQw_k, vjRBA, xawK2: popup videos bottom right
+  // ppaLA, HyqOe, .SiteWidePermanentBlock sticky banner top of viewport
 
   // ultimate-guitar.com:
-  // js-ab-regular === header
-  // kCj2L === footer
+  // js-ab-regular: header
+  // kCj2L: footer
   "ultimate-guitar.com": {
     selectors: [
       ".tYMPb",
@@ -25,31 +27,40 @@ const siteConfigs = {
       ".js-ab-regular",
       ".kCj2L",
       ".OcirG",
+
+      ".H_wrZ",
+      ".S3T7j",
+      ".iQw_k",
+      ".vjRBA",
+      ".xawK2",
+      ".ppaLA",
+      ".HyqOe",
+      ".SiteWidePermanentBlock",
     ],
   },
 
-  // songsterrAd === bottom of page on tab pages
-  // adsbygoogle === all ads
+  // songsterrAd: bottom of page on tab pages
+  // adsbygoogle: all ads
   "bigbasstabs.com": {
     selectors: [".adsbygoogle", ".songsterrAd"],
   },
 
-  // ads_banner === all ads
-  // popup-nps-btn === "report bad ads"
-  // js-ad-fake-player === "learn to play" on tab pages
+  // ads_banner: all ads
+  // popup-nps-btn: "report bad ads"
+  // js-ad-fake-player: "learn to play" on tab pages
   "911tabs.com": {
     selectors: [".ads_banner", ".popup-nps-btn", ".js-ad-fake-player"],
   },
 
-  // d1xpq3pb === all ads on tab pages
-  // aniBox === video popup, bottom of viewport on tab pages
+  // d1xpq3pb: all ads on tab pages
+  // aniBox: video popup, bottom of viewport on tab pages
   "chordify.net": {
     selectors: [".d1xpq3pb", "#aniBox"],
   },
 
-  // iframe === all ads
-  // b-ad-fake-player === "learn to play" on tab pages
-  // r_a === "get the note-for-note artist-approved version" popup
+  // iframe: all ads
+  // b-ad-fake-player: "learn to play" on tab pages
+  // r_a: "get the note-for-note artist-approved version" popup
   "guitartabs.cc": {
     selectors: ["iframe", ".b-ad-fake-player", "#r_a"],
   },
