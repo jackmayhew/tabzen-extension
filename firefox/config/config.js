@@ -13,6 +13,7 @@ const siteConfigs = {
   // OcirG: "sign up" popup
   // H_wrZ, S3T7j, iQw_k, vjRBA, xawK2: popup videos bottom right
   // ppaLA, HyqOe, .SiteWidePermanentBlock sticky banner top of viewport
+  // cbOTo wwcEp lwSLb wwcEp: signup and “Say hello to Practice Mode” popup
 
   // ultimate-guitar.com:
   // js-ab-regular: header
@@ -27,7 +28,11 @@ const siteConfigs = {
       ".js-ab-regular",
       ".kCj2L",
       ".OcirG",
-
+      "cbOTo",
+      "wwcEp",
+      "lwSLb",
+      "wwcEp",
+      
       ".H_wrZ",
       ".S3T7j",
       ".iQw_k",
