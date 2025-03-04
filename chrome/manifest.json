@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "TabZen",
-  "version": "1.4",
+  "version": "1.6",
   "description": "Your tabs, distraction-free. TabZen blocks intrusive ads, giving you a cleaner view of your guitar, bass, and drum tabs.",
   "permissions": ["storage", "activeTab"],
   "background": {

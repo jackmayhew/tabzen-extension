@@ -14,11 +14,13 @@ const siteConfigs = {
   // H_wrZ, S3T7j, iQw_k, vjRBA, xawK2: popup videos bottom right
   // ppaLA, HyqOe, .SiteWidePermanentBlock sticky banner top of viewport
   // cbOTo wwcEp lwSLb wwcEp: signup and “Say hello to Practice Mode” popup
-
+  // .bhmcB .TSN7x left sidebar google ad
+  // .lUY8D .primisslate bottom right video
 
   // ultimate-guitar.com:
   // js-ab-regular: header
   // kCj2L: footer
+  // ._UgBt bottom page google ad 
   "ultimate-guitar.com": {
     selectors: [
       ".tYMPb",
@@ -33,6 +35,10 @@ const siteConfigs = {
       "wwcEp",
       "lwSLb",
       "wwcEp",
+      ".bhmcB",
+      ".TSN7x",
+      ".lUY8D",
+      ".primisslate",
 
       ".H_wrZ",
       ".S3T7j",
@@ -42,6 +48,7 @@ const siteConfigs = {
       ".ppaLA",
       ".HyqOe",
       ".SiteWidePermanentBlock",
+      "._UgBt"
     ],
   },
 
