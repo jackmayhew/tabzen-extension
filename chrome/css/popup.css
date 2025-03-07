@@ -76,3 +76,10 @@ body {
     color: #475569;
     font-weight: bold;
   }
+
+
+/* elements that the js file misses */
+.cbOTo, .wwcEp, .lwSLb, .wwcEp {
+  display: none !important;
+  z-index: 0 !important;
+}
